@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F34F6209-1BB5-4A07-976E-90C2ECEA8F68}</ProjectGuid>
+    <ProjectGuid>{E35F360D-BC82-4424-A86E-1953A2F5A82D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Pruebadeaccess</RootNamespace>
-    <AssemblyName>Pruebadeaccess</AssemblyName>
+    <RootNamespace>pruebaa</RootNamespace>
+    <AssemblyName>pruebaa</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,9 +54,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
