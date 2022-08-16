@@ -16,5 +16,23 @@ namespace pruebaa
         {
             InitializeComponent();
         }
+
+        private void txtbnombre_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void lblnombre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.label1.Text = txtnombre.Text;
+            f2.Show();
+            Form1.Hide();
+        }
     }
 }
