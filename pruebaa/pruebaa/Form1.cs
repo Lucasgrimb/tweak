@@ -30,9 +30,9 @@ namespace pruebaa
         private void btn1_Click(object sender, EventArgs e)
         {
             Form2 f2 = new Form2(txtbnombre.Text);
-            f2.label1.Text = txtnombre.Text;
+          
             f2.Show();
-            Form1.Hide();
+            this.Hide();
         }
     }
 }

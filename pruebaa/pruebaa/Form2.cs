@@ -26,12 +26,12 @@ namespace pruebaa
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(_nombre);
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            nombre.Text = _nombre;
         }
     }
 }
