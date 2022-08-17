@@ -12,9 +12,11 @@ namespace pruebaa
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        string _nombre;
+        public Form2(string n)
         {
             InitializeComponent();
+            this._nombre = n;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -23,6 +25,11 @@ namespace pruebaa
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
         {
 
         }
