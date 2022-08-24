@@ -12,11 +12,11 @@ namespace pruebaa
 {
     public partial class Form2 : Form
     {
-        string _nombre;
+        string _n;
         public Form2(string n)
         {
             InitializeComponent();
-            this._nombre = n;
+            _n = n;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -26,12 +26,11 @@ namespace pruebaa
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(_nombre);
+            label1.Text = _n;
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            nombre.Text = _nombre;
         }
     }
 }
