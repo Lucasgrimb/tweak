@@ -17,6 +17,8 @@ namespace pruebaa
         {
             InitializeComponent();
             _n = n;
+            Form3 f3 = new Form3();
+            f3.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
