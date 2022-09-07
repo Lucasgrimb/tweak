@@ -26,19 +26,26 @@ namespace pruebaa
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            
+            pictureBoxesArray[0] = pB1;
+            pictureBoxesArray[1] = pB2;
+            pictureBoxesArray[2] = pB3;
+            pictureBoxesArray[3] = pB4;
+
+
+            for (int i = 0; i < pictureBoxesArray.Length; i++)
+            {  
+                pictureBoxesArray[i].SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+       
             posiblesEmociones[0] = pruebaa.Properties.Resources.pictocont;
             posiblesEmociones[1] = pruebaa.Properties.Resources.pictoenojo;
             posiblesEmociones[2] = pruebaa.Properties.Resources.pictotriste;
             pictureBoxesArray[0].Image = posiblesEmociones[(numEmocion.Next(0, 2) + 1)];
             pictureBoxesArray[1].Image = posiblesEmociones[(numEmocion.Next(0, 2) + 1)];
             pictureBoxesArray[2].Image = posiblesEmociones[(numEmocion.Next(0, 2) + 1)];
-            pictureBoxesArray[3].Image = posiblesEmociones[(numEmocion.Next(0, 2) + 1)];
-
-  
-            
-           
+            pictureBoxesArray[3].Image = posiblesEmociones[(numEmocion.Next(0, 2) + 1)]; 
         }
+
 
         private void btnstart_Click(object sender, EventArgs e)
         {

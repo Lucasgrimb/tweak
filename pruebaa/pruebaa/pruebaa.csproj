@@ -99,9 +99,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pcont.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\pictocont.jpg" />
   </ItemGroup>
   <ItemGroup>
