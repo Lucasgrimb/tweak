@@ -107,5 +107,8 @@
   <ItemGroup>
     <None Include="Resources\pictotriste.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nocorrecto.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
