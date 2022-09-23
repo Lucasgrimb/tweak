@@ -15,6 +15,7 @@ namespace pruebaa
  //creo array para guardar las fotos de abajo, array con las 3 fotos y un random que despues uso para asignar las fotos a los pBox
         PictureBox[] pictureBoxesArray = new PictureBox[3];
         Image[] posiblesEmociones = new Image[3];
+        
         Random numEmocion = new Random();
         
 
@@ -38,15 +39,17 @@ namespace pruebaa
                 pictureBoxesArray[i].SizeMode = PictureBoxSizeMode.StretchImage;
             }
             pB1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pB5.SizeMode = PictureBoxSizeMode.StretchImage;
+            
  //Cargo la imagen de la compu y las meto en el array      
             posiblesEmociones[0] = pruebaa.Properties.Resources.pictocont;
             posiblesEmociones[1] = pruebaa.Properties.Resources.pictoenojo;
             posiblesEmociones[2] = pruebaa.Properties.Resources.pictotriste;
+
+            
             //Asigno una emocion a cada pBox aleatoriamente
 
             pB1.Image = posiblesEmociones[(numEmocion.Next(0, 2) + 1)];
-            pB5.Image = pruebaa.Properties.Resources.nocorrecto;
+       
 
             for(int i = 0; i<pictureBoxesArray.Length; i++){
                 pictureBoxesArray[i].Image = posiblesEmociones[(numEmocion.Next(0, 2) + 1)];

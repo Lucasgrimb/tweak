@@ -32,66 +32,58 @@
             this.pB2 = new System.Windows.Forms.PictureBox();
             this.pB3 = new System.Windows.Forms.PictureBox();
             this.pB4 = new System.Windows.Forms.PictureBox();
-            this.pB5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pB1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pB5)).BeginInit();
             this.SuspendLayout();
             // 
             // pB1
             // 
-            this.pB1.Location = new System.Drawing.Point(512, 73);
+            this.pB1.Location = new System.Drawing.Point(256, 38);
+            this.pB1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pB1.Name = "pB1";
-            this.pB1.Size = new System.Drawing.Size(186, 119);
+            this.pB1.Size = new System.Drawing.Size(93, 62);
             this.pB1.TabIndex = 1;
             this.pB1.TabStop = false;
             // 
             // pB2
             // 
-            this.pB2.Location = new System.Drawing.Point(185, 338);
+            this.pB2.Location = new System.Drawing.Point(92, 176);
+            this.pB2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pB2.Name = "pB2";
-            this.pB2.Size = new System.Drawing.Size(125, 66);
+            this.pB2.Size = new System.Drawing.Size(62, 34);
             this.pB2.TabIndex = 2;
             this.pB2.TabStop = false;
             // 
             // pB3
             // 
-            this.pB3.Location = new System.Drawing.Point(415, 338);
+            this.pB3.Location = new System.Drawing.Point(208, 176);
+            this.pB3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pB3.Name = "pB3";
-            this.pB3.Size = new System.Drawing.Size(121, 66);
+            this.pB3.Size = new System.Drawing.Size(60, 34);
             this.pB3.TabIndex = 3;
             this.pB3.TabStop = false;
             // 
             // pB4
             // 
-            this.pB4.Location = new System.Drawing.Point(689, 338);
+            this.pB4.Location = new System.Drawing.Point(344, 176);
+            this.pB4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pB4.Name = "pB4";
-            this.pB4.Size = new System.Drawing.Size(129, 66);
+            this.pB4.Size = new System.Drawing.Size(64, 34);
             this.pB4.TabIndex = 4;
             this.pB4.TabStop = false;
             // 
-            // pB5
-            // 
-            this.pB5.Image = global::pruebaa.Properties.Resources.nocorrecto;
-            this.pB5.Location = new System.Drawing.Point(959, 338);
-            this.pB5.Name = "pB5";
-            this.pB5.Size = new System.Drawing.Size(129, 66);
-            this.pB5.TabIndex = 5;
-            this.pB5.TabStop = false;
-            this.pB5.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1188, 662);
-            this.Controls.Add(this.pB5);
+            this.ClientSize = new System.Drawing.Size(594, 344);
             this.Controls.Add(this.pB4);
             this.Controls.Add(this.pB3);
             this.Controls.Add(this.pB2);
             this.Controls.Add(this.pB1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
@@ -99,7 +91,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pB2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pB5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -109,6 +100,5 @@
         private System.Windows.Forms.PictureBox pB2;
         private System.Windows.Forms.PictureBox pB3;
         private System.Windows.Forms.PictureBox pB4;
-        private System.Windows.Forms.PictureBox pB5;
     }
 }
