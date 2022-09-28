@@ -15,8 +15,10 @@ namespace pruebaa
  //creo array para guardar las fotos de abajo, array con las 3 fotos y un random que despues uso para asignar las fotos a los pBox
         PictureBox[] pictureBoxesArray = new PictureBox[3];
         List <Image> posiblesEmociones = new List<Image>();
-       List <int> numEmocion = new List<int> ();
+        List <int> numEmocion = new List<int> ();
+        
         Random raux = new Random();
+
         
 
         public Form3()
@@ -46,23 +48,18 @@ namespace pruebaa
             posiblesEmociones.Add( pruebaa.Properties.Resources.pictotriste);
 
 
-
+  
             //Asigno una emocion a cada pBox aleatoriamente
-            Console.WriteLine(posiblesEmociones.Count);
-            // for creo contador para pb 
-            int cont = 0;
+            int contador = 0;
             while (posiblesEmociones.Count > 0)
             {
-
-
                 int i = raux.Next(0, posiblesEmociones.Count);
-
-                pictureBoxesArray[cont].Image = posiblesEmociones[i];
-
+                pictureBoxesArray[contador].Image = posiblesEmociones[i];
                 posiblesEmociones.RemoveAt(i);
-                cont++;
+                contador++;
             }
-            Console.WriteLine(posiblesEmociones.Count);
+            //Asigno emocion a Pb1
+            pB1.Image = pictureBoxesArray[raux.Next(0, pictureBoxesArray.Length)].Image;
 
 
 
