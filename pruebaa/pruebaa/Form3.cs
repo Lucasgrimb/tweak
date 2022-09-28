@@ -48,19 +48,7 @@ namespace pruebaa
             posiblesEmociones.Add( pruebaa.Properties.Resources.pictotriste);
 
 
-  
-            //Asigno una emocion a cada pBox aleatoriamente
-            int contador = 0;
-            while (posiblesEmociones.Count > 0)
-            {
-                int i = raux.Next(0, posiblesEmociones.Count);
-                pictureBoxesArray[contador].Image = posiblesEmociones[i];
-                posiblesEmociones.RemoveAt(i);
-                contador++;
-            }
-            //Asigno emocion a Pb1
-            pB1.Image = pictureBoxesArray[raux.Next(0, pictureBoxesArray.Length)].Image;
-
+            randomizarImages();
 
 
          
@@ -73,7 +61,7 @@ namespace pruebaa
         {
             if (pB2.Image == pB1.Image)
             {
-                Label.Show
+                randomizarImages();
             }
         }
 
@@ -83,6 +71,22 @@ namespace pruebaa
         }
         private void pB4_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void randomizarImages()
+        {
+            //Asigno una emocion a cada pBox aleatoriamente
+            int contador = 0;
+            while (posiblesEmociones.Count > 0)
+            {
+                int i = raux.Next(0, posiblesEmociones.Count);
+                pictureBoxesArray[contador].Image = posiblesEmociones[i];
+                posiblesEmociones.RemoveAt(i);
+                contador++;
+            }
+            //Asigno emocion a Pb1
+            pB1.Image = pictureBoxesArray[raux.Next(0, pictureBoxesArray.Length)].Image;
 
         }
 
