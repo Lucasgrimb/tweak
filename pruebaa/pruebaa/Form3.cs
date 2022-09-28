@@ -63,15 +63,34 @@ namespace pruebaa
             {
                 randomizarImages();
             }
+            else
+            {
+                MessageBox.Show("emocion incorrecta, volve a intentarlo");
+            }
+
         }
 
         private void pB3_Click(object sender, EventArgs e)
         {
-
+            if (pB3.Image == pB1.Image)
+            {
+                randomizarImages();
+            }
+            else
+            {
+                MessageBox.Show("emocion incorrecta, volve a intentarlo");
+            }
         }
         private void pB4_Click(object sender, EventArgs e)
         {
-
+            if (pB4.Image == pB1.Image)
+            {
+                randomizarImages();
+            }
+            else
+            {
+                MessageBox.Show("emocion incorrecta, volve a intentarlo");
+            }
         }
 
         private void randomizarImages()
