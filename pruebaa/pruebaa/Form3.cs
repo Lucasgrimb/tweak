@@ -65,14 +65,26 @@ namespace pruebaa
 
          
 }
-        private void btnstart_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pB1_Click(object sender, EventArgs e)
         {
 
         }
+        private void pB2_Click(object sender, EventArgs e)
+        {
+            if (pB2.Image == pB1.Image)
+            {
+                Label.Show
+            }
+        }
+
+        private void pB3_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void pB4_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
