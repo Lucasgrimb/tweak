@@ -15,8 +15,6 @@ namespace pruebaa
  //creo array para guardar las fotos de abajo, array con las 3 fotos y un random que despues uso para asignar las fotos a los pBox
         PictureBox[] pictureBoxesArray = new PictureBox[3];
         List <Image> posiblesEmociones = new List<Image>();
-        List <int> numEmocion = new List<int> ();
-        
         Random raux = new Random();
 
         
@@ -59,38 +57,17 @@ namespace pruebaa
         }
         private void pB2_Click(object sender, EventArgs e)
         {
-            if (pB2.Image == pB1.Image)
-            {
-                randomizarImages();
-            }
-            else
-            {
-                MessageBox.Show("emocion incorrecta, volve a intentarlo");
-            }
+            checkResult(pB2);
 
         }
 
         private void pB3_Click(object sender, EventArgs e)
         {
-            if (pB3.Image == pB1.Image)
-            {
-                randomizarImages();
-            }
-            else
-            {
-                MessageBox.Show("emocion incorrecta, volve a intentarlo");
-            }
+            checkResult(pB3);
         }
         private void pB4_Click(object sender, EventArgs e)
         {
-            if (pB4.Image == pB1.Image)
-            {
-                randomizarImages();
-            }
-            else
-            {
-                MessageBox.Show("emocion incorrecta, volve a intentarlo");
-            }
+            checkResult(pB4);
         }
 
         private void randomizarImages()
@@ -106,8 +83,20 @@ namespace pruebaa
             }
             //Asigno emocion a Pb1
             pB1.Image = pictureBoxesArray[raux.Next(0, pictureBoxesArray.Length)].Image;
-
         }
+
+        private void checkResult(PictureBox pB)
+        {
+            if (pB.Image == pB1.Image)
+            {
+                randomizarImages();
+            }
+            else
+            {
+                MessageBox.Show("emocion incorrecta, volve a intentarlo");
+            }
+        }
+
 
     }
 }

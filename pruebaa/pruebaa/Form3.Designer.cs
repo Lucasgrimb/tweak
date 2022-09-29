@@ -40,40 +40,40 @@
             // 
             // pB1
             // 
-            this.pB1.Location = new System.Drawing.Point(256, 38);
+            this.pB1.Location = new System.Drawing.Point(231, 27);
             this.pB1.Margin = new System.Windows.Forms.Padding(2);
             this.pB1.Name = "pB1";
-            this.pB1.Size = new System.Drawing.Size(93, 62);
+            this.pB1.Size = new System.Drawing.Size(134, 86);
             this.pB1.TabIndex = 1;
             this.pB1.TabStop = false;
             this.pB1.Click += new System.EventHandler(this.pB1_Click);
             // 
             // pB2
             // 
-            this.pB2.Location = new System.Drawing.Point(92, 176);
+            this.pB2.Location = new System.Drawing.Point(92, 167);
             this.pB2.Margin = new System.Windows.Forms.Padding(2);
             this.pB2.Name = "pB2";
-            this.pB2.Size = new System.Drawing.Size(62, 34);
+            this.pB2.Size = new System.Drawing.Size(113, 75);
             this.pB2.TabIndex = 2;
             this.pB2.TabStop = false;
             this.pB2.Click += new System.EventHandler(this.pB2_Click);
             // 
             // pB3
             // 
-            this.pB3.Location = new System.Drawing.Point(208, 176);
+            this.pB3.Location = new System.Drawing.Point(245, 167);
             this.pB3.Margin = new System.Windows.Forms.Padding(2);
             this.pB3.Name = "pB3";
-            this.pB3.Size = new System.Drawing.Size(60, 34);
+            this.pB3.Size = new System.Drawing.Size(104, 75);
             this.pB3.TabIndex = 3;
             this.pB3.TabStop = false;
             this.pB3.Click += new System.EventHandler(this.pB3_Click);
             // 
             // pB4
             // 
-            this.pB4.Location = new System.Drawing.Point(344, 176);
+            this.pB4.Location = new System.Drawing.Point(400, 167);
             this.pB4.Margin = new System.Windows.Forms.Padding(2);
             this.pB4.Name = "pB4";
-            this.pB4.Size = new System.Drawing.Size(64, 34);
+            this.pB4.Size = new System.Drawing.Size(110, 75);
             this.pB4.TabIndex = 4;
             this.pB4.TabStop = false;
             this.pB4.Click += new System.EventHandler(this.pB4_Click);
