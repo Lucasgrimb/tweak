@@ -110,5 +110,32 @@
   <ItemGroup>
     <None Include="Resources\nocorrecto.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asustado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cansado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enfadado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enfermo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hambriento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sediento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sorprendido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triste.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

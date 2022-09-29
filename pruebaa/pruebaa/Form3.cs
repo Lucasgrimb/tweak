@@ -43,9 +43,9 @@ namespace pruebaa
             pB1.SizeMode = PictureBoxSizeMode.StretchImage;
 
             //Cargo la imagen de la compu y las meto en el array      
-            posiblesEmociones.Add(pruebaa.Properties.Resources.pictocont);
-            posiblesEmociones.Add(  pruebaa.Properties.Resources.pictoenojo);
-            posiblesEmociones.Add( pruebaa.Properties.Resources.pictotriste);
+            posiblesEmociones.Add(pruebaa.Properties.Resources.contento);
+            posiblesEmociones.Add(  pruebaa.Properties.Resources.triste);
+            posiblesEmociones.Add( pruebaa.Properties.Resources.enfadado);
 
 
             randomizarImages();

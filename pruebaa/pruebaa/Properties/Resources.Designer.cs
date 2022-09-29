@@ -63,9 +63,9 @@ namespace pruebaa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap nocorrecto {
+        public static System.Drawing.Bitmap asustado {
             get {
-                object obj = ResourceManager.GetObject("nocorrecto", resourceCulture);
+                object obj = ResourceManager.GetObject("asustado", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace pruebaa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap pictocont {
+        public static System.Drawing.Bitmap cansado {
             get {
-                object obj = ResourceManager.GetObject("pictocont", resourceCulture);
+                object obj = ResourceManager.GetObject("cansado", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace pruebaa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap pictoenojo {
+        public static System.Drawing.Bitmap contento {
             get {
-                object obj = ResourceManager.GetObject("pictoenojo", resourceCulture);
+                object obj = ResourceManager.GetObject("contento", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,59 @@ namespace pruebaa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap pictotriste {
+        public static System.Drawing.Bitmap enfadado {
             get {
-                object obj = ResourceManager.GetObject("pictotriste", resourceCulture);
+                object obj = ResourceManager.GetObject("enfadado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap enfermo {
+            get {
+                object obj = ResourceManager.GetObject("enfermo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap hambriento {
+            get {
+                object obj = ResourceManager.GetObject("hambriento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap sediento {
+            get {
+                object obj = ResourceManager.GetObject("sediento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap sorprendido {
+            get {
+                object obj = ResourceManager.GetObject("sorprendido", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap triste {
+            get {
+                object obj = ResourceManager.GetObject("triste", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
