@@ -13,7 +13,7 @@ namespace pruebaa
     public partial class Form4 : Form
     {
         // creo las listas y arrays
-        PictureBox[] pictureBoxesArray = new PictureBox[3];
+        PictureBox[] pictureBoxesArray = new PictureBox[6];
         List<Image> posiblesEmociones = new List<Image>();
         Random raux = new Random();
 
@@ -24,6 +24,7 @@ namespace pruebaa
 
         private void Form4_Load(object sender, EventArgs e)
         {
+            
             //agrego pBoxes al array 
             pictureBoxesArray[0] = pB2;
             pictureBoxesArray[1] = pB3;
@@ -70,13 +71,19 @@ namespace pruebaa
         {
             //Asigno una emocion a cada pBox aleatoriamente
             int contador = 0;
-            while (posiblesEmociones.Count > 0)
+            while (posiblesEmociones.Count > 3)
             {
                 int i = raux.Next(0, posiblesEmociones.Count);
                 pictureBoxesArray[contador].Image = posiblesEmociones[i];
                 posiblesEmociones.RemoveAt(i);
                 contador++;
             }
+            // Vuelvo a agregar las emociones que salieron a la lista para que puedan volver a salir cuando quiero juegar de nuevo y se uso la funcion randomizarImagenes.
+            for(int j = 0; j<6; j++)
+            {
+                posiblesEmociones.Add(pictureBoxesArray[j].Image);
+            }
+
             //Asigno emocion a Pb1
             pB1.Image = pictureBoxesArray[raux.Next(0, pictureBoxesArray.Length)].Image;
         }

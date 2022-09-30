@@ -16,8 +16,7 @@ namespace pruebaa
         PictureBox[] pictureBoxesArray = new PictureBox[3];
         List <Image> posiblesEmociones = new List<Image>();
         Random raux = new Random();
-
-        
+  
 
         public Form3()
         {
@@ -27,6 +26,9 @@ namespace pruebaa
 
         private void Form3_Load(object sender, EventArgs e)
         {
+
+            Form4 f4 = new Form4();
+            f4.Show();
             //agrego los pBox que cree por pantalla al array pictureBoxesArray
 
             pictureBoxesArray[0] = pB2;
@@ -81,6 +83,11 @@ namespace pruebaa
                 posiblesEmociones.RemoveAt(i);
                 contador++;
             }
+            for(int j = 0; j<3; j++)
+            {
+               posiblesEmociones.Add(pictureBoxesArray[j].Image);
+            }
+           
             //Asigno emocion a Pb1
             pB1.Image = pictureBoxesArray[raux.Next(0, pictureBoxesArray.Length)].Image;
         }
