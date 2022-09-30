@@ -63,6 +63,16 @@ namespace pruebaa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap aburrido {
+            get {
+                object obj = ResourceManager.GetObject("aburrido", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap asustado {
             get {
                 object obj = ResourceManager.GetObject("asustado", resourceCulture);
@@ -76,6 +86,16 @@ namespace pruebaa.Properties {
         public static System.Drawing.Bitmap cansado {
             get {
                 object obj = ResourceManager.GetObject("cansado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap confundir {
+            get {
+                object obj = ResourceManager.GetObject("confundir", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,6 +143,36 @@ namespace pruebaa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap nervioso {
+            get {
+                object obj = ResourceManager.GetObject("nervioso", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap orgulloso {
+            get {
+                object obj = ResourceManager.GetObject("orgulloso", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap preocupado {
+            get {
+                object obj = ResourceManager.GetObject("preocupado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap sediento {
             get {
                 object obj = ResourceManager.GetObject("sediento", resourceCulture);
@@ -146,6 +196,16 @@ namespace pruebaa.Properties {
         public static System.Drawing.Bitmap triste {
             get {
                 object obj = ResourceManager.GetObject("triste", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap vergüenza {
+            get {
+                object obj = ResourceManager.GetObject("vergüenza", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
