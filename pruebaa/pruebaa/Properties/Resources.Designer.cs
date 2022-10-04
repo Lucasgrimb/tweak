@@ -263,6 +263,16 @@ namespace pruebaa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap sediento {
+            get {
+                object obj = ResourceManager.GetObject("sediento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap sedientoD {
             get {
                 object obj = ResourceManager.GetObject("sedientoD", resourceCulture);
