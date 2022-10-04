@@ -24,6 +24,8 @@ namespace pruebaa
 
         private void Form5_Load(object sender, EventArgs e)
         {
+            Form6 f6 = new Form6();
+            f6.Show();
             //agrego pBoxes al array 
             pictureBoxesArray[0] = pB2;
             pictureBoxesArray[1] = pB3;

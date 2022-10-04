@@ -13,7 +13,7 @@ namespace pruebaa
     public partial class Form6 : Form
     {
         PictureBox[] pBpictos = new PictureBox[3];
-        PictureBox[] pBdibujos = new PictureBox[3];
+        List<PictureBox> pBdibujos = new List<PictureBox>();
         int[] nPicto = new int[3];
         List<Image> pictos = new List<Image>();
         List<Image> dibujos = new List<Image>();
@@ -29,16 +29,17 @@ namespace pruebaa
             pBpictos[0] = pB1p;
             pBpictos[1] = pB2p;
             pBpictos[2] = pB3p;
-            pBdibujos[0] = pB1d;
-            pBdibujos[1] = pB2d;
-            pBdibujos[2] = pB3d;
+        
+            pBdibujos.Add(pB1d);
+            pBdibujos.Add(pB2d);
+            pBdibujos.Add(pB3d);
 
             // pongo las imagenes en un formato especial para que se vean centradas
             for (int x = 0; x < pBpictos.Length; x++)
             {
                 pBpictos[x].SizeMode = PictureBoxSizeMode.StretchImage;
             }
-            for (int x = 0; x < pBdibujos.Length; x++)
+            for (int x = 0; x < pBdibujos.Count; x++)
             {
                 pBdibujos[x].SizeMode = PictureBoxSizeMode.StretchImage;
             }
@@ -69,12 +70,15 @@ namespace pruebaa
             dibujos.Add(pruebaa.Properties.Resources.preocupadoD);
 
             //asigno emociones a pBpictos
-            for (int i = 0;i< 3; i++) {
+            for (int i = 0; i< 3; i++) {
                 int x = rand.Next(0, pictos.Count);
                 pBpictos[i].Image = pictos[x];
                 pictos.RemoveAt(x);
                 nPicto[i] = x;
+
+                pBpictos[rand.Next(0, pBpictos.Count())].Image = dibujos[x];
             }
+            
 
             
 
