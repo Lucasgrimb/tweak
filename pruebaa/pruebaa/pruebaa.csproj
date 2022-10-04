@@ -161,5 +161,41 @@
   <ItemGroup>
     <None Include="Resources\vergüenza.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aburridoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asustadoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cansadoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contentoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enfadadoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enfermoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hambrientoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nerviosoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preocupadoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sedientoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sorprendidoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tristeD.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
