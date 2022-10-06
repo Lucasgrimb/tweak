@@ -14,7 +14,7 @@ namespace pruebaa
     {
         PictureBox[] pBpictos = new PictureBox[3];
         List<PictureBox> pBdibujos = new List<PictureBox>();
-        int[] nPicto = new int[3];
+        List<int> pbNum = new List<int>();
         List<Image> pictos = new List<Image>();
         List<Image> dibujos = new List<Image>();
         Random rand = new Random();
@@ -43,6 +43,15 @@ namespace pruebaa
             {
                 pBdibujos[x].SizeMode = PictureBoxSizeMode.StretchImage;
             }
+
+            randomizarImagenes();
+            
+
+            
+
+        }
+        private void randomizarImagenes()
+        {
             // Agrego las imagenes de resources a la lista con las emociones que se usarán en el nivel
             pictos.Add(pruebaa.Properties.Resources.contento);
             pictos.Add(pruebaa.Properties.Resources.triste);
@@ -54,7 +63,6 @@ namespace pruebaa
             pictos.Add(pruebaa.Properties.Resources.sediento);
             pictos.Add(pruebaa.Properties.Resources.enfermo);
             pictos.Add(pruebaa.Properties.Resources.aburrido);
-            pictos.Add(pruebaa.Properties.Resources.confundir);
             pictos.Add(pruebaa.Properties.Resources.preocupado);
 
             dibujos.Add(pruebaa.Properties.Resources.contentoD);
@@ -70,18 +78,20 @@ namespace pruebaa
             dibujos.Add(pruebaa.Properties.Resources.preocupadoD);
 
             //asigno emociones a pBpictos
-            for (int i = 0; i< 3; i++) {
+            for (int i = 0; i < 3; i++)
+            {
+                
                 int x = rand.Next(0, pictos.Count);
                 pBpictos[i].Image = pictos[x];
                 pictos.RemoveAt(x);
-                nPicto[i] = x;
+                pBdibujos[i].Image = dibujos[x];
+                dibujos.RemoveAt(x);
 
-                pBpictos[rand.Next(0, pBpictos.Count())].Image = dibujos[x];
+
+
+
+
             }
-            
-
-            
-
         }
     }
 }
