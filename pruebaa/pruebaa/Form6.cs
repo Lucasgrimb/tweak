@@ -18,6 +18,8 @@ namespace pruebaa
         List<Image> pictos = new List<Image>();
         List<Image> dibujos = new List<Image>();
         Random rand = new Random();
+        List<int> npicto = new List<int>();
+        List<int> ndibu = new List<int>();
         public Form6()
         {
             InitializeComponent();
@@ -35,6 +37,7 @@ namespace pruebaa
             pBdibujos.Add(pB3d);
 
             // pongo las imagenes en un formato especial para que se vean centradas
+
             for (int x = 0; x < pBpictos.Length; x++)
             {
                 pBpictos[x].SizeMode = PictureBoxSizeMode.StretchImage;
@@ -78,20 +81,32 @@ namespace pruebaa
             dibujos.Add(pruebaa.Properties.Resources.preocupadoD);
 
             //asigno emociones a pBpictos
-            for (int i = 0; i < 3; i++)
+            int contador = 0;
+            ndibu.Add(1);
+            ndibu.Add(2);
+            ndibu.Add(3);
+            npicto.Add(1);
+            npicto.Add(2);
+            npicto.Add(3);
+            while (contador < 6)
             {
-                
                 int x = rand.Next(0, pictos.Count);
-                pBpictos[i].Image = pictos[x];
+                int f = npicto[rand.Next(0, npicto.Count)];
+                pBpictos[f].Image = pictos[x];
                 pictos.RemoveAt(x);
-                pBdibujos[i].Image = dibujos[x];
+                npicto.RemoveAt(f);
+                int z = ndibu[rand.Next(0, ndibu.Count)];
+                pBdibujos[z].Image = dibujos[x];
                 dibujos.RemoveAt(x);
-
-
-
-
+                ndibu.RemoveAt(z);         
 
             }
+
+
+
+
+
+            
         }
     }
 }
