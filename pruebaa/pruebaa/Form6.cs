@@ -14,12 +14,10 @@ namespace pruebaa
     {
         PictureBox[] pBpictos = new PictureBox[3];
         PictureBox[] pBdibujos = new PictureBox[3];
-        List<int> pbNum = new List<int>();
         List<Image> pictos = new List<Image>();
         List<Image> dibujos = new List<Image>();
         Random rand = new Random();
-        List<int> npicto = new List<int>();
-        List<int> ndibu = new List<int>();
+      
         public Form6()
         {
             InitializeComponent();
@@ -81,25 +79,17 @@ namespace pruebaa
             dibujos.Add(pruebaa.Properties.Resources.preocupadoD);
 
             //asigno emociones a pBpictos
-            int contador = 0;
-            ndibu.Add(0);
-            ndibu.Add(1);
-            ndibu.Add(2);
-            npicto.Add(0);
-            npicto.Add(1);
-            npicto.Add(2);
+           
 
-            while (contador < 6)
+            for (int i = 0; i < 3; i++)
             {
                 int x = rand.Next(0, pictos.Count);
-                int f = npicto[rand.Next(0, npicto.Count - 1)];
-                pBpictos [f].Image = pictos[x];
-                pictos.RemoveAt(x);
-                npicto.RemoveAt(f);
-                int z = ndibu[rand.Next(0, ndibu.Count-1)];
-                pBdibujos[z].Image = dibujos[x];
+
+                pBpictos [i].Image = pictos[x];
+                pictos.RemoveAt(x);         
+                pBdibujos[i].Image = dibujos[x];
                 dibujos.RemoveAt(x);
-                ndibu.RemoveAt(z);         
+       
 
             }
 
