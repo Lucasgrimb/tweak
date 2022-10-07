@@ -17,7 +17,7 @@ namespace pruebaa
         List<Image> pictos = new List<Image>();
         List<Image> dibujos = new List<Image>();
         Random rand = new Random();
-      
+ 
         public Form6()
         {
             InitializeComponent();
@@ -30,12 +30,11 @@ namespace pruebaa
             pBpictos[1] = pB2p;
             pBpictos[2] = pB3p;
 
-            pBdibujos[0] = pB1p;
-            pBdibujos[1] = pB2p;
-            pBdibujos[2] = pB3p;
+            pBdibujos[0] = pB1d;
+            pBdibujos[1] = pB2d;
+            pBdibujos[2] = pB3d;
 
             // pongo las imagenes en un formato especial para que se vean centradas
-
             for (int x = 0; x < pBpictos.Length; x++)
             {
                 pBpictos[x].SizeMode = PictureBoxSizeMode.StretchImage;
@@ -79,11 +78,12 @@ namespace pruebaa
             dibujos.Add(pruebaa.Properties.Resources.preocupadoD);
 
             //asigno emociones a pBpictos
-           
 
             for (int i = 0; i < 3; i++)
             {
+                
                 int x = rand.Next(0, pictos.Count);
+
 
                 pBpictos [i].Image = pictos[x];
                 pictos.RemoveAt(x);         
@@ -91,13 +91,44 @@ namespace pruebaa
                 dibujos.RemoveAt(x);
        
 
+                pBpictos[i].Image = pictos[x];
+                pictos.RemoveAt(x);
+                pBdibujos[i].Image = dibujos[x];
+                dibujos.RemoveAt(x);
+
             }
 
+        
+        }
 
+        private void pB1p_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void pB2p_Click(object sender, EventArgs e)
+        {
 
-            
+        }
+
+        private void pB3p_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pB1d_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pB2d_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pB3d_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
