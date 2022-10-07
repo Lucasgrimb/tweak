@@ -13,7 +13,7 @@ namespace pruebaa
     public partial class Form6 : Form
     {
         PictureBox[] pBpictos = new PictureBox[3];
-        List<PictureBox> pBdibujos = new List<PictureBox>();
+        PictureBox[] pBdibujos = new PictureBox[3];
         List<int> pbNum = new List<int>();
         List<Image> pictos = new List<Image>();
         List<Image> dibujos = new List<Image>();
@@ -31,10 +31,10 @@ namespace pruebaa
             pBpictos[0] = pB1p;
             pBpictos[1] = pB2p;
             pBpictos[2] = pB3p;
-        
-            pBdibujos.Add(pB1d);
-            pBdibujos.Add(pB2d);
-            pBdibujos.Add(pB3d);
+
+            pBdibujos[0] = pB1p;
+            pBdibujos[1] = pB2p;
+            pBdibujos[2] = pB3p;
 
             // pongo las imagenes en un formato especial para que se vean centradas
 
@@ -42,7 +42,7 @@ namespace pruebaa
             {
                 pBpictos[x].SizeMode = PictureBoxSizeMode.StretchImage;
             }
-            for (int x = 0; x < pBdibujos.Count; x++)
+            for (int x = 0; x < pBdibujos.Length; x++)
             {
                 pBdibujos[x].SizeMode = PictureBoxSizeMode.StretchImage;
             }
@@ -82,20 +82,21 @@ namespace pruebaa
 
             //asigno emociones a pBpictos
             int contador = 0;
+            ndibu.Add(0);
             ndibu.Add(1);
             ndibu.Add(2);
-            ndibu.Add(3);
+            npicto.Add(0);
             npicto.Add(1);
             npicto.Add(2);
-            npicto.Add(3);
+
             while (contador < 6)
             {
                 int x = rand.Next(0, pictos.Count);
-                int f = npicto[rand.Next(0, npicto.Count)];
-                pBpictos[f].Image = pictos[x];
+                int f = npicto[rand.Next(0, npicto.Count - 1)];
+                pBpictos [f].Image = pictos[x];
                 pictos.RemoveAt(x);
                 npicto.RemoveAt(f);
-                int z = ndibu[rand.Next(0, ndibu.Count)];
+                int z = ndibu[rand.Next(0, ndibu.Count-1)];
                 pBdibujos[z].Image = dibujos[x];
                 dibujos.RemoveAt(x);
                 ndibu.RemoveAt(z);         
