@@ -16,6 +16,7 @@ namespace pruebaa
         PictureBox[] pBdibujos = new PictureBox[3];
         List<Image> pictos = new List<Image>();
         List<Image> dibujos = new List<Image>();
+        List<Image> ndibujos = new List<Image>();
         Random rand = new Random();
  
         public Form6()
@@ -86,18 +87,18 @@ namespace pruebaa
 
 
                 pBpictos [i].Image = pictos[x];
-                pictos.RemoveAt(x);         
-                pBdibujos[i].Image = dibujos[x];
-                dibujos.RemoveAt(x);
-       
+                ndibujos[i] = dibujos[x];
+                pictos.RemoveAt(x);        
 
-                pBpictos[i].Image = pictos[x];
-                pictos.RemoveAt(x);
-                pBdibujos[i].Image = dibujos[x];
-                dibujos.RemoveAt(x);
+                dibujos.RemoveAt(x);                          
+            }
+            for (int j = 0; j<3; j++)
+            {
+                int f = rand.Next(0, ndibujos.Count);
+                pBdibujos[j].Image = ndibujos[f];
+                ndibujos.RemoveAt(f);
 
             }
-
         
         }
 
