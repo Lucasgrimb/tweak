@@ -89,7 +89,6 @@ namespace pruebaa
                 pBpictos [i].Image = pictos[x];
                 ndibujos[i] = dibujos[x];
                 pictos.RemoveAt(x);        
-
                 dibujos.RemoveAt(x);                          
             }
             for (int j = 0; j<3; j++)
