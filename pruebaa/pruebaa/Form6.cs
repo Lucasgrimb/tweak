@@ -81,13 +81,11 @@ namespace pruebaa
             //asigno emociones a pBpictos
 
             for (int i = 0; i < 3; i++)
-            {
-                
+            {               
                 int x = rand.Next(0, pictos.Count);
-
-
+             
                 pBpictos [i].Image = pictos[x];
-                ndibujos[i] = dibujos[x];
+                ndibujos.Add(dibujos[x]);
                 pictos.RemoveAt(x);        
                 dibujos.RemoveAt(x);                          
             }
