@@ -34,7 +34,7 @@ namespace pruebaa
             pBdibujos[0] = pB1d;
             pBdibujos[1] = pB2d;
             pBdibujos[2] = pB3d;
-
+           
             // pongo las imagenes en un formato especial para que se vean centradas
             for (int x = 0; x < pBpictos.Length; x++)
             {
@@ -85,6 +85,7 @@ namespace pruebaa
                 int x = rand.Next(0, pictos.Count);
              
                 pBpictos [i].Image = pictos[x];
+                pBpictos[i].Tag = i.ToString();
                 ndibujos.Add(dibujos[x]);
                 pictos.RemoveAt(x);        
                 dibujos.RemoveAt(x);                          
